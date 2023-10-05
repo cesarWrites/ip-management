@@ -2,10 +2,8 @@ from flask import Flask, request, jsonify
 import mysql.connector
 import os
 from dotenv import load_dotenv
-from pathlib import Path
 
-dotenv_path = Path('.env')
-load_dotenv(dotenv_path)
+load_dotenv()
 
 app = Flask(__name__)
 
